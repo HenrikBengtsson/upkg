@@ -4,4 +4,4 @@ Authors@R: c(person("John", "Doe", role="cre", email="john@doe.org"))
 Title: A Micro Package
 Description: A very small package.
 License: GPL (>= 3)
-RoxygenNote: 5.0.1
+RoxygenNote: 5.0.1.9000

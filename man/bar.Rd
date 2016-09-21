@@ -9,8 +9,6 @@ bar(x = 1, ...)
 \arguments{
 \item{x}{An object.}
 
-\item{...}{Not used.}
-
 \item{\dots}{Additional arguments passed to \code{\link{foo}()}.}
 }
 \description{

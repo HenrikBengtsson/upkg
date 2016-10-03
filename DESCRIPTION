@@ -2,6 +2,8 @@ Package: do
 Version: 0.1.0-9000
 Imports:
   R.utils
+Suggests:
+  devtools
 Authors@R: c(person("Henrik", "Bengtsson", role="cre", email="henrikb@braju.com"))
 Title: Do Things in R
 Description: A very small package.

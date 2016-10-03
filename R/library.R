@@ -2,19 +2,19 @@
 #'
 #' @importFrom utils install.packages
 #' @export
-install <- function(pkgs, ...) {
+install <- CmdArgsFunction(function(pkgs, ...) {
   pkgs <- unlist(strsplit(pkgs, split = ",", fixed = TRUE), use.names = FALSE)
   pkgs <- gsub("[[:space:]]+", "", pkgs)
   mprintf("Installing packages: %s", paste(sQuote(pkgs), collapse = ", "))
   install.packages(pkgs=pkgs, ...)
-}
-class(install) <- c("CmdArgsFunction", class(install))
+})
 
-
+#' aliases i
+#'
+#' @importFrom utils update.packages
 #' @export
-call <- function(fcn, ...) {
-  fcn <- get(fcn, mode="function")
-  fcn(...)
-}
-class(call) <- c("CmdArgsFunction", class(call))
+update <- CmdArgsFunction(function(...) {
+  mprintf("Updating packages:")
+  update.packages(...)
+})
 

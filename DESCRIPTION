@@ -1,7 +1,9 @@
-Package: upkg
-Version: 1.0
-Authors@R: c(person("John", "Doe", role="cre", email="john@doe.org"))
-Title: A Micro Package
+Package: do
+Version: 0.1.0-9000
+Imports:
+  R.utils
+Authors@R: c(person("Henrik", "Bengtsson", role="cre", email="henrikb@braju.com"))
+Title: Do Things in R
 Description: A very small package.
 License: GPL (>= 3)
 RoxygenNote: 5.0.1

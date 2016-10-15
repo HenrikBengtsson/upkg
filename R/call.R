@@ -14,7 +14,6 @@ callc <- CmdArgsFunction(function(fcn, ...) {
 .getfcn <- function(fcn, ...) { 
   fcn <- as.character(fcn)
   parts <- unlist(strsplit(fcn, split="::", fixed=TRUE))
-  str(list(fcn=fcn, parts=parts))
   if (length(parts) == 2) {
     envir <- getNamespace(parts[1])
     fcn <- parts[2]

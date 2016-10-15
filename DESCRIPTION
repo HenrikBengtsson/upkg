@@ -1,6 +1,7 @@
 Package: do
 Version: 0.1.0-9000
 Imports:
+  R.cache,
   R.utils
 Suggests:
   devtools

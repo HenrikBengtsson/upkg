@@ -11,7 +11,7 @@ foo(x = 1, y = 2, ...)
 
 \item{y}{Another object.}
 
-\item{\dots}{Not used.}
+\item{...}{Not used.}
 }
 \description{
 Foo something

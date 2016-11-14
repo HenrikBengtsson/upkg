@@ -1,0 +1,6 @@
+path <- tempdir()
+print(path)
+print(file.info(path))
+print(file.exists(path))
+print(file_test("-d", path))
+stopifnot(file_test("-d", path))

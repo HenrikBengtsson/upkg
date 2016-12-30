@@ -28,6 +28,9 @@ matrix:
 r_github_packages:
   - jimhester/covr
 
+before_install:
+  - Rscript -e 'parallel::detectCores()'
+
 after_success:
   - Rscript -e 'covr::codecov(quiet=FALSE)'
 
